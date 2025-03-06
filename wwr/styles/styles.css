@@ -141,6 +141,7 @@ main section img {
 }
 
 main h1 {
+    font-family: var(--heading-font);
     text-align: center;
     grid-column: 5 / 7;
 }
@@ -169,6 +170,7 @@ main div img {
 }
 
 main div h3 {
+    font-family: var(--heading-font);
     padding-top: 10px;
     color: var(--accent1-color);
     grid-row: 1;
