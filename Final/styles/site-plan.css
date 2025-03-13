@@ -68,6 +68,7 @@ p {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color-on-white);
   padding: 1em;
+  white-space:pre-wrap;
 }
 .colors {
   width: 100%;
