@@ -23,6 +23,10 @@
   --nav-hover-background-color: #396E94;
   }
 
+body {
+    font-family: var(--paragraph-font);
+}
+
 main {
     padding-top: 50px;
     max-width: 100vw;
@@ -38,6 +42,7 @@ body {
 }
 
 header {
+    font-family: var(--heading-font);
     background-color: var(--accent1-color);
     display: grid;
     grid-template-columns: 25% 75%;
@@ -118,6 +123,7 @@ footer div a:hover {
 h1 {
     text-align: center;
     padding: 5vw 0;
+    font-family: var(--heading-font);
 }
 
 img {
