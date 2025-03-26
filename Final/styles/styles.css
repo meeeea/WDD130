@@ -25,11 +25,12 @@
 
 body {
     font-family: var(--paragraph-font);
+    min-width: 580px;
 }
 
 main {
     padding-top: 50px;
-    max-width: 100vw;
+    max-width: 100%;
 }
 
 
@@ -66,7 +67,7 @@ header nav a {
     grid-row: 1;
     color: var(--secondary-color);
     text-decoration:none;
-    width: max(50%, auto);
+    width: 100%;
     height: 50%;
     text-align: center;
     justify-content: center;
@@ -153,4 +154,82 @@ p {
     grid-template-rows: auto;
     justify-items: center;
     align-items: center;
+}
+
+#education {
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr;
+    grid-template-rows: 20px 50px 80px repeat(3, auto 20px);
+}
+
+#education div {
+    display: grid;
+    grid-template-rows: 10px 3fr 10px;
+    grid-template-columns: 1fr 5fr 5fr 1fr;
+    grid-column: 2/4;
+}
+
+#education div .img {
+    z-index: 1;
+    margin: 2.5vw 0;
+    align-self: center;
+    margin-right: 2.5vw;
+    padding: 0;
+}
+
+.text {
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: 100% !important;
+    grid-row: 2 !important;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);    
+}
+
+.text p {
+    padding:2%;
+    font-size: 1.5vw;
+    margin: 0;
+}
+
+#schooling {
+    grid-row: 4;
+    grid-column: 2/4;
+}
+
+#schooling p, #college p{
+    grid-column: 2;
+}
+
+
+#schooling .img, #college .img {
+    grid-column: 1/3;
+    grid-row: 2;
+}
+
+#programming {
+    grid-row: 8/11;
+}
+
+#programming p {
+    grid-column: 1;
+}
+
+#programming .img {
+    grid-column: 3/5;
+    grid-row: 2;
+}
+
+#college {
+    grid-row: 12/15;
+}
+
+#education-headline {
+    justify-self: center;
+    grid-column: 2;
+    color: var(--accent1-color);
+}
+
+.img {
+    display: block !important;
+    float: left !important;
 }
